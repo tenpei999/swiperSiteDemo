@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aqua</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+
+  <header class="l-header p-header">
+    <a href="#main-visual"><h1 class="c-logo"></h1></a>
+    <div class="c-text p-header__link-story">
+      <a href="#story" class="p-header__link-to-story">開発ストーリー</a>
+    </div>
+    <div class="c-text p-header__link-feature">
+      <a href="#feature" class="p-header__link-to-feature">アクアモエンNEOの特徴</a>
+    </div>
+
+    <button class="c-contact p-header__contact is-form"><a href="#">お問い合わせ</a></button>
+  </header>
+<!-- l-header p-header (Object/Project/_header.scss) -->
+
+  <main>
+    <article class="p-main-visual" id="main-visual">
+      <section class="p-main-visual__inner">
+        <h2 class="p-main-visual__catch">
+          <p class="c-text">火災のリスクを考えることは、<br>命を守ることだと思う</p>
+          <p class="c-text p-main-visual__catch-sub">
+            あらゆる工事現場で働く人に<br class="is-pc">もっと安心を提供したい。<br>そんな思いから誕生した商品が、日本アクアの<br class="is-pc"><span class="c-marker--gold__white">"アクアモエンNEO"だ。</span>
+          </p>
+        </h2>
+      </section>
+    </article>
+    <!-- l-header p-header (Object/Project/_main-visual.scss) -->
+
+    <section class="p-fire">
+      <span class="p-fire__bg-left"></span>
+      <article class="p-fire__inner">
+        <h2 class="p-fire__title">
+          <p class="c-title--section">アクアモエンNEOは<br><span class="c-marker--gold__white">現場火災事故をゼロにする。</span></p>
+        </h2>
+        <article class="p-fire__date">
+          <section class="p-fire__date-left">
+            <ul class="c-text--san p-fire__situation">
+              <li class="recent"><p>近年の火災発生状況</p></li>
+              <li class="
+    construction"><p>工事現場の火災発生状況</p></li>
+              <li class="decade"><p>最近10年の火災発生件数の推移</p></li>
+            </ul>
+            <div class="p-fire__number">
+              <img src="img/img_outbreak.svg" alt="火災発生状況" class="base">
+            </div>
+          </section>
+          <div class="p-fire__date--graph">
+            <img src="img/img_graph_fire.svg" alt="最近10年の火災発生件数の推移" class="graph">
+          </div>
+        </article>
+      </article>
+    </section>
+    <!-- l-header p-header (Object/Project/_fire.scss) -->
+
+    <section class="p-story" id="story">
+      <div class="p-story__introduction">
+        <div class="p-story__inner">
+          <h2 class="p-story__title">
+            <p class="c-title--section">開発ストーリー</p>
+          </h2>
+          <p class="c-text p-story__intro">
+            あらゆる工事現場で働く人にもっと安心を提供したい。<br>そんな思いから誕生した商品が、日本アクアのアクアモエンNEO"だ。<br>発売依頼、お客様に高い評価をいただき、これまでになかった不燃断熱材として新たな地位を築いた”アクアモエン”は、<br>どのような経緯で誕生したのか。そしてその新しい価値はお客様にどうやって届けられていったのか。<br>開発リーダーが”アクアモエンNEO”のこれまでを振り返り、そしてこれからの挑戦を語るストーリー。
+          </p>
+          <section class="p-story--standard">
+            <h3 class="p-story__title-second">
+              <p class="c-title--sentence">
+                発熱性試験(コーンカロリーメーター試験)<br>ISO5660-1
+              </p>
+            </h3>
+            <div class="text-box p-story--standard__intro">
+              <p class="c-text">
+                日本アクアでは建築基準法の不燃材料等の評価項目となっている発熱性試験を導入しています。試験機は材料をコーンヒーターで加熱することにより発生したガスをスパーク点火で点火、燃焼させたその燃焼ガスの酸素濃度を測定することで発熱量や発熱速度が判ります。また、試験体を防火上有害な亀裂・貫通等の有無に関しても確認を行なっています。
+              </p>
+            </div>
+            <article class="p-story--standard-info">
+              <div class="img">
+                <img src="img/img_pyrogenic_test.svg" alt="発熱性試験機の写真">
+              </div>
+              <ul class="info">
+                <li class="title"><p>発熱性試験の基準</p></li>
+                <li class="quality"><p>輻射熱量50KW/m2</p></li>
+                <li class="standard">
+                  <p>
+                    ①総発熱量8MJ/m2以下
+                  </p>
+                </li>
+                <li class="standard">
+                  <p>
+                    ②最高発熱速度が10秒を超えて連続して200kw/㎡を超えることがないこと
+                  </p>
+                </li>
+                <li class="standard">
+                  <p>
+                    ③防火上有害な亀裂・貫通等がなきこと
+                  </p>
+                </li>
+                <li class="time">
+                  <p>
+                    試験時間：不燃性20分、純不燃性10分、難燃性5分
+                  </p>
+                </li>
+              </ul>
+            </article>
+          </section>
+        </div>
+      </div>
+      <!-- p-story__introduction (Object/Project/_story.scss) -->
+      
+      <article class="p-story--place">
+        <div class="p-story--place__inner">
+          <section class="p-story--place__description">
+            <h3 class="p-story__title-second">
+              <p class="c-title--sentence-san">
+                試験場所の確立
+              </p>
+            </h3>
+            <div class="tex-tbox p-story--place__intro">
+              <p class="c-text--san">
+                バーナー試験や溶接溶断試験はどこの場所でも実施できる訳ではなく、試験実施可能な施設等探すのが当初困難であったが、ゼネコンさんのニーズとも合致して上市にあたっては試験場所をご提供頂いた。
+              </p>
+            </div>
+          </section>
+          <div class="img">
+            <img src="img/img_test_site.jpg" alt="試験場所の写真">
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- p-story__introduction (Object/Project/_story.scss) -->
+
+    <article class="p-heart">
+      <section class="p-heart--left">
+        <h2 class="p-heart__title">
+          <p class="c-title--section">従業員の熱い思い</p>
+        </h2>
+        <p class="c-text p-heart__intro">
+          不燃性能評価は前期コーンカロリーメーター試験機で試験は<br>
+          テクニカルセンター室内の不燃カーテンで仕切られた場所に設置、<br class="is-pc">開発当初はよく燃えてしまうような試験体も数多く作ってしまいました。<br>
+          試験者は隣接して着火等確認しなければならず、<br class="is-pc">
+          試験装置のメンテナンスで媒等臭いが試験者に付着する等があった。<br>
+          1日に10以上の試験を日常的に実施していた。<br>
+          苦労はあったが建設現場で安全、安心を提供できることに<br class="is-pc">
+          おおいに喜びを感じている。
+        </p>
+      </section>
+      <div class="img">
+        <img src="img/img_doctor--sp.jpg" alt="研究員の写真" class="is-mp">
+        <img src="img/img_doctor.jpg" alt="研究員の写真" class="is-pc">
+      </div>
+    </article>
+    <!-- p-story__introduction (Object/Project/_heart.scss) -->
+
+    <section class="p-feature" id="feature">
+      <div class="p-feature--inner">
+        <section class="p-feature__intro">
+          <h2 class="p-feature__title">
+            <p class="c-title--section">火災事故のない工事現場へ</p>
+          </h2>
+          <p class="c-text--san p-feature__intro">
+            ウレタンフォームを使用している建築現場で火災事故が起きない<br>
+            凹凸のある部分など、形状に関わらず綺麗に塗布することができる
+          </p>
+        </section>
+        <div class="p-feature__proof">
+          <p class="c-text--san p-feature__proof-child">
+            「アクアモエン®︎」は火源が接触着火して燃焼初期時に速やかに断熱材表面に炭化層を形成し、延焼を阻止。<br>
+            建設現場での溶接や鉄骨溶断の際に発生する火花などの断熱材への侵入を防ぐことで防火性能を発揮します。
+          </p>
+        </div>
+        <section class="l-tests p-feature--tests">
+          <div class="p-feature--tests__catch">
+            <p class="c-text--san u-catch-tests">
+              各種燃焼試験で、<span class="c-accent">優れた耐火特性を実証</span>
+            </p>
+          </div>
+          <section class="p-burnup">
+            <h3 class="c-accent--title p-burnup__title">
+              <p class="c-title--sentence__tests">酸素指数測定  JIS K 7201-2</p>
+            </h3>
+            <p class="c-text--san p-burnup__description">
+              ※酸素指数とは、材料が燃焼を持続するのに必要な最低酸素濃度(容量％)を酸素指数(Oxygen Index)と定義しています。
+            </p>
+            <article class="p-burnup__result">
+              <!-- table -->
+              <div class="p-burnup__list">
+                <img src="img/img_burnup_index.svg" alt="酸素指数測定値の比較">
+              </div>
+              
+              <div class="p-burnup__test">
+                <p class="c-text--san">試験風景</p>
+                <img src="img/img_burnup_test.svg" alt="酸素指数測定の状況">
+              </div>
+            </article>
+            <p class="c-text--san">
+              <small>※1引用文献−Ahren,H.W.,Zahradnik,B.,J.Fire and Flamm.,2,2,260(1973)</small>
+            </p>
+            <p class="c-text--san">
+              <small>※2引用文献−糸毛治等,日本建築学会北海道支部研究報告集,No83,(2010年7月)</small>
+            </p>
+          </section>
+          <section class="p-urethane">
+            <h3 class="c-accent--title p-urethan__title">
+              <p class="c-title--sentence__tests">物性値 建築物断熱用吹付け硬質ウレタンフォームJISA9526 A種1H、A種2H</p>
+            </h3>
+            <p class="c-text--san  p-urethan__intro">
+              アクアモエン®︎はビル、マンション等の用途(JISA9526A種1H)、冷凍、冷蔵倉庫等の用途(JISA9526A種2H)等、<br>
+              広い建築物に使用可能です。
+            </p>
+            <div class="p-urethan__table">
+              <img src="img/img_product_spec.svg" alt="性能比較表">
+            </div>
+            <p class="c-text--san">
+              <small>A種1H：壁などの用途に適する非耐力性吹付け硬質ウレタンフォーム原料</small><br>
+              <small>A種2H：冷凍倉庫などの用途に適する耐力性吹付け硬質ウレタンフォーム原料
+              </small>
+            </p>
+          </section>  <!-- //ウレタン-->
+          <section class="p-spark">
+            <h3 class="c-accent--title p-spark__title">
+              <p class="c-title--sentence__tests">溶断・火花試験</p>
+            </h3>
+            <p class="c-text--san  p-spark__intro">
+              JIS A 1323『建築工事用シートの溶接及び溶断火花に対する難燃性試験方法』にて<br>溶接・溶断火花の影響の確認を実施しました。
+            </p>
+            <div>
+              <img src="img/media002.svg" alt="動画埋め込み部のレイアウトの確認用" class="p-spark__media">
+              <div class="p-spark__media-explanation">
+                <p class="neo">溶断火花をはじき燃焼しない</p>
+                <p class="a1">溶断火花がフォームを貫通し燃焼</p>
+              </div>
+            </div>
+            <p class="p-spark__organization">試験機関：(一財)建材試験センター</p>
+            <ul class="p-spark__after">
+              <li class="p-spark__after--neo">
+                <ul class="p-spark__after-item">
+                  <li class="img"><img src="img/img_after_spark_neo.jpg" alt="溶断火花試験後の写真・アクアモエンNEO"></li>
+                  <li class="name">アクアモエンNEO</li>
+                  <li class="text">火花を断熱材表面近傍で保持</li>
+                </ul>
+              </li>
+              <li class="p-spark__after--ah1">
+                <ul class="p-spark__after-item">
+                  <li class="img"><img src="img/img_after_spark_ah1.jpg"></li>
+                  <li class="name">ウレタンフォーム(A種1H)</li>
+                  <li class="text">火花が断熱材内部に侵入</li>
+                </ul>
+              </li>
+            </ul>
+          </section>  <!-- //ウレタン-->
+        </section> 
+      </div>
+      <div class="p-feature--background"></div>
+      <div class="p-feature--background__upper"></div>
+      <div class="p-feature--background__lower"></div>
+    </section>
+    <section class="l-quality p-quality">
+      <h2 class="p-quality__title">
+        <p class="c-title--section">品質管理（ワンストップで確実な品質）</p>
+      </h2>
+      <div>
+        <section class="l-quality__upper p-quality__point1">
+          <div class="c-title--quality">
+            <img src="img/img_point1.svg" alt="point1" class="point">
+            <h3 class="c-title--quality__inner p-quality--title__point">
+              <p class=".text">断熱材原料から施工まで一貫した品質管理</p>
+            </h3>
+          </div>
+          <p class="c-text--san p-quality__intro">
+            製造、販売から施工まで一気通貫で担当できるのは日本アクアだけの技術です。<br class="is-pc">会社内でそれぞれに品質を管理する部署が設置されており、常に試験を行いながら、品質の安全性を高めております。<br class="is-pc">また、原料供給体制や認定施工店は全国に拡大しており、<br class="is-pc">顧客様にメリットのある物流網でご対応が可能です。
+          </p>
+          <img src="img/img_organization_chart-mp.svg" alt="原材料から施工まで一貫した品質管理をしていることを示すフロー" class="p-quality__org-chart-mp">
+          <img src="img/img_organization_chart.svg" alt="原材料から施工まで一貫した品質管理をしていることを示すフロー" class="p-quality__org-chart-pc">
+          <!-- svg画像 -->
+        </section>
+        <article class="l-quality__lower p-quality__point2">
+          <div class="c-title--quality">
+            <img src="img/img_point2.svg" alt="point2" class="point">
+            <h3 class="c-title--quality__inner p-quality--title__point">
+              <p class=".text">アクアモエンNEOの施工者認定制度</p>
+            </h3>
+          </div>
+          <p class="c-text--san p-quality__intro">
+            アクアモエンNEOは不燃断熱材新製品で施工要領と<br class="is-pc">品質管理手法を理解し施工可能な施工者を認定しています。
+          </p>
+          <img src="img/img_course.svg" alt="アクアエモンNEOの施工認定制度" class="p-quality__course">
+        </article>
+      </div>
+      <section class="p-promise">
+        <div class="p-promise__inner">
+          <article class="p-promise__construction">
+            <h3 class="c-title--promise p-promise__title">
+              <p class="text">工期短縮</p>
+            </h3>
+            <p class="c-text--san p-promise__intro">
+              アクアモエンNEOは、従来の施工作業と比較して作業時間を約1/3に短縮することが可能です。
+            </p>
+            <ul class="p-promise__comparison">
+              <li class="p-promise__before">
+                <img src="img/img_before_use.jpg" alt="施工前の写真">
+                <p>
+                  従来の不燃断熱剤では不燃コート処理など3工程が必要
+                </p>
+              </li>
+              <li class="p-promise__arow"><img src="img/img_arow.png" alt="やじる左向き矢印" class="arrow"> </li>
+              <li class="p-promise__after"><img src="img/img_after_use.jpg" alt="施工前の写真">
+                <p>
+                  1回の塗装で完了。吹き付けた部分の加工も不要。
+                </p>
+              </li>
+            </ul>
+          </article>
+          <article class="p-quality__reuse">
+            <h3 class="c-title--promise p-promise__title">
+              <p class="text">環境にやさしい</p>
+            </h3>
+            <p class="c-text--san p-promise__intro">
+              アクアブロー® (断熱吹き込み工法用硬質ウレタンブローイング・天井用) 日本アクアのみの技術。
+            </p>
+            <div class="p-promise__reuse-img">
+              <img src="img/img_reuse_process.png" alt="再資源化の流れ" class="is-pc">
+              <img src="img/img_reuse_process-mp.png" alt="再資源化の流れ" class="is-mp">
+            </div>
+            <p class="p-promise__after">
+              産業廃棄物扱いされていたアクアフォーム端材を建設現場から回収し、製品化しているため、環境に優しい。
+            </p>
+            <button class="c-contact p-promise__contact is-form"><a href="#">もっと詳しく見る</a></button>
+          </article>
+        </div>
+      </section>
+      <article class="p-voice">
+        <section class="p-voice__pen">
+          <div class="p-voice__catch">
+            <p class="c-title--section">アクアモエンは、たくさんの方に愛され
+              数多くのリピートをいただいております。</p>
+            </div>
+          <h2 class="c-title--section p-voice__title">
+            <p>
+              お客さまの声
+            </p>
+          </h2>
+          <p class="c-text--san p-voice__intro">アクアモエンは、ビル・マンション・倉庫などのあらゆる建築現場で活用されています<br>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○<br>○○○○○○○○○○○○○○○○○○○○○○○
+          </p>
+        </section>
+        <section class="p-voice__customer is-market">
+          <article class="c-board p-voice__bord is-right">
+            <div class="c-board__inner">
+              <h3 class="c-title--section">
+                <p>
+                  スーパーの安全性を守る
+                </p>
+              </h3>
+              <p>
+                アクアモエンは、ビル・マンション・倉庫などのあらゆる建築現場で活用されています。○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○
+              </p>
+            </div>
+          </article>
+          <span class="c-board__back is-right"></span>
+        </section>
+        <section class="p-voice__customer is-construction">
+          <article class="c-board p-voice__bord is-left">
+            <div class="c-board__inner">
+              <h3 class="c-title--section">
+                <p>
+                  工事現場の安全を優先
+                </p>
+              </h3>
+              <p>
+                アクアモエンは、ビル・マンション・倉庫などのあらゆる建築現場で活用されています。○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○
+              </p>
+            </div>
+          </article>
+          <span class="c-board__back is-left"></span>
+        </section>
+      </article>
+    </section>
+    <section class="c-text--san p-faq">
+
+      <h2 class="p-faq__title">
+        <img src="img/h.faq.svg" alt="Q&A">
+      </h2>
+      <p class="p-faq__intro">
+        「アクアモエン®」は火源が接触して着火燃焼初期時に速やかに断熱材表面に炭化層を形成し、延焼を阻止。<br>建築現場での溶接や鉄骨溶断の際に発生する火花などの断熱材への侵入を防ぐことで防火性能を発揮します。
+      </p>
+
+      <section class="p-faq__detail">
+        <!-- FAQ開始  -->
+        <h3 class="p-faq__question">
+          <img src="img/h_q.svg" alt="質問">
+          <p class="c-title--sentence">アクアモエンNEOはウレタンフォームですか？</p>
+        </h3>
+        <div class="p-faq__answer">
+          <img src="img/h_a.svg" alt="解答">
+          <p class="c-text--san">
+            アクアモエンNEOはJISA9526建築物断熱用吹付硬質ウレタンフォームのA種1H、A種2Hに分類される製品です。成分としてはウレタン結合の他に耐熱性、難燃性の高いイソシアヌレート​結合を多く含んでおります。​
+          </p>
+        </div>
+        <!-- FAQ終了  -->
+      </section>
+      
+      <section class="p-faq__detail">
+        <!-- FAQ開始  -->
+        <h3 class="p-faq__question">
+          <img src="img/h_q.svg" alt="質問">
+          <p class="c-title--sentence">フォーム表面に塗装したいのですが可能ですか？</p>
+        </h3>
+        <div class="p-faq__answer">
+          <img src="img/h_a.svg" alt="解答">
+          <p class="c-text--san">
+            フォーム表面を塗装して使用されている実例もございます。使用可能な塗料等に関してはお問い合わせください。フォーム表面を塗装される場合には国土交通大臣不燃材料認定の仕様とは異なる事はご承知置き下さい。</p>
+        </div>
+        <!-- FAQ終了  -->
+      </section>
+
+      <section class="p-faq__detail">
+        <!-- FAQ開始  -->
+        <h3 class="p-faq__question">
+          <img src="img/h_q.svg" alt="質問">
+          <p class="c-title--sentence">使用可能な温度域はどのくらいですか？</p>
+        </h3>
+        <div class="p-faq__answer">
+          <img src="img/h_a.svg" alt="解答">
+          <p class="c-text--san">
+            アクアモエンNEOは前記イソシアヌレート結合を多く有しているイソシアヌレートフォームであり高温域での耐久性に優れています。高温120℃での寸法安定性に関しても変化率が3%以内と自社品質管理基準を満たしております。また、低温に関しても-40℃での変化率が3%以内であり。かなり広い環境温度条件での寸法安定性に優れる商品になります。
+            <br>※寸法変化率はASTMD2126に準拠して測定しています。
+
+          </p>
+        </div>
+        <!-- FAQ終了  -->
+      </section>
+
+      <section class="p-faq__detail">
+        <!-- FAQ開始  -->
+        <h3 class="p-faq__question">
+          <img src="img/h_q.svg" alt="質問">
+          <p class="c-title--sentence">GL工法に使用可能ですか？</p>
+        </h3>
+        <div class="p-faq__answer">
+          <img src="img/h_a.svg" alt="解答">
+          <p class="c-text--san">
+            GL工法では通常GLボンド使用前にプライマーを使用しますプライマーは可燃性である為にあまりお薦め致しません。
+            <br>但し、プライマー塗布後速やかにGLボンドを塗布する等の措置をとられれば<br>現場での安全性は確保さると思われます。
+          </p>
+        </div>
+        <!-- FAQ終了  -->
+      </section>
+
+      <section class="p-faq__detail">
+        <!-- FAQ開始  -->
+        <h3 class="p-faq__question">
+          <img src="img/h_q.svg" alt="質問">
+          <p class="c-title--sentence">不燃性ということは燃えないのですか？</p>
+        </h3>
+        <div class="p-faq__answer">
+          <img src="img/h_a.svg" alt="解答">
+          <p class="c-text--san">
+            アクアモエンNEOはじめ多くの発泡プラスチック系断熱材は有機物であり燃焼は致します。
+            不燃材料等の試験方法であるISO5660-1はコーンカロリーメーターという試験機を用いて20分間材料を燃焼が生じる
+            高温環境においた場合の最高発熱速度と総発熱量が一定の基準値以下のものが不燃性となっています。​
+            アクアモエンNEOは燃焼初期に表面に強固な炭化層を形成すること等に​より燃焼の三要素(熱源、可燃物、酸素)の
+            相互接触を抑制して不燃​性能を発揮します。​
+          </p>
+        </div>
+        <section class="p-faq__description is-test-equipment">
+          <h4 class="p-faq__description-title">
+            <p>保有する各燃焼試験装置</p>
+          </h4>
+          <article class="example">
+            <div class="left">
+              <p class="name c-text--san">コーンカロリーメーター（CCM)試験機<br>(ISO5660対応)</p>
+              <img src="img/img_pyrogeric_test.jpg" alt="コーンカロリーメーターの写真">
+              <p class="description c-text--san">
+                建材の不燃、準不燃、難燃材料等の性能を<br>測定する装置で品質確認や開発に使用します。
+              </p>
+            </div>
+            <div class="right">
+              <p class="name c-text--san">燃焼性試験機<br>
+                (JISA9526対応)
+                </p>
+              <img src="img/img_combustion_test.jpg" alt="燃焼性試験機の写真">
+              <p class="description c-text--san">
+                フォームの燃焼性を判定します。<br>バーナーで着火し燃焼時間と燃焼長さを測定します。
+              </p>
+            </div>
+          </article>
+        </section>
+        <!-- FAQ終了  -->
+      </section>
+
+      <section class="p-faq__detail">
+        <h3 class="p-faq__question">
+          <img src="img/h_q.svg" alt="質問">
+          <p class="c-title--sentence">不アクアモエンNEO燃焼時にガスは発生しますか？</p>
+        </h3>
+        <div class="p-faq__answer">
+          <img src="img/h_a.svg" alt="解答">
+          <p class="c-text--san">
+            ウレタンフォーム燃焼時には一酸化炭素、二酸化炭素等の窒息性ガスとアセトアルデヒド等の刺激性ガスが発生します。<br>
+            アクアモエンNEOはガス有害性試験に合格しており、前記の通り燃焼初期に表面に強固な炭化層を形成する為に燃焼ガスの発生量は従来のウレタンフォームと比べ非常に少なくなります。
+          </p>
+          <p class="c-text--san">アクアモエンのガス有害性はマウスの行動停止時間の基準(赤ラワン材)6.8分を大きく上回り約13分であった。(ラワン等)</p>
+        </div>
+        <section class="p-faq__description is-test-equipment">
+          <h4 class="p-faq__description-title">
+            <p>ガス有害性試験<br>※2018年9月 日本建築学会(東北大学) 東京大学と共同発表から抜粋</p>
+          </h4>
+          <article class="example">
+            <div class="left">
+              <img src="img/img_gus_harmful01.png" alt="">
+            </div>
+            <div class="right">
+              <img src="img/img_gus_harmful02.png" alt="">
+            </div>
+          </article>
+        </section>
+      </section>
+
+    </section>
+    <div class="p-contact__before"></div>
+    <section class="p-contact">
+      <div class="p-contact__inner">
+        <h2 class="p-contact__title">
+          <p class="c-title--section">お問い合わせ</p>
+        </h2>
+        <article class="p-contact__link">
+          <button  class="c-contact p-contact__button is-form">
+            <a href="#">
+              お問合せはフォームはこちら
+            </a>
+          </button>
+          <button class="c-contact p-contact__button is-tel">
+            <a href="#">
+              お電話でのお問合せ
+            </a>
+          </button>
+        </article>
+      </div>
+    </section>
+    <article class="p-access">
+      <div class="p-access__inner">
+        <div class="p-access__company">
+          <img src="img/img_logo_aqua-white.svg" alt="ロゴ" class="aqua">
+          <img src="img/text_company_name.svg" alt="会社名" class="name">
+        </div>
+        <div class="p-access__place">
+          <img src="img/img_logo_tosho.svg" alt="東証一部上場">
+          <p class="c-text">〒108-0075　東京都港区港南2-16-2　太陽生命品川ビル20F
+            <br>TEL：03-5463-1117　FAX：03-5463-1118</p>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="p-footer">
+    <img src="img/text_copyright_aqua.svg" alt="Copyright 2022 Nippon Aqua co.ltd All rights reserved " class="copy">
+  </footer>
+</body>
+</html>

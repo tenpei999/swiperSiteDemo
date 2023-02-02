@@ -1,0 +1,6 @@
+{
+	htmlWhitespaceSensitivity : ignore,
+	printWidth : 10000,
+	useTabs : true,
+	tabWidth : 4
+}

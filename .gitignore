@@ -1,0 +1,12 @@
+config.codekit
+config.codekit3
+.DS_Store
+Thumbs.db
+
+*.log
+
+*node_module
+/node_module
+*node_modules
+/node_modules
+*.vscode 
