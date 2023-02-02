@@ -1,108 +1,31 @@
-@use "../../Foundation/mixin" as m;
-@use "../../Foundation/variable" as v;
+@use "../../Foundation/index" as *;
 
-.swiper {
-  &-slide {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-
-    .img {
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-    }
-  }
-  &-wrapper {
-    height: 100%;
-    width: 100%;
-  }
+.swiper--wrapper {
+  /* wrapperのサイズを調整 */
+  width: 100%;
+  height: 300px;
 }
 
-.card {
-  &-body {
-    height: 10rem;
-  }
-
-  &-inner {
-    margin: 1rem 0.5rem;
-    background-color: rgba($color: #ffffff, $alpha: 0.5);
-  }
-
-  &-text {
-    height: 7rem;
-    width: 5rem;
-
-  }
+.swiper-slide {
+  /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 300px;
 }
 
-.swiper-concept {
-  width: 100vw;
-  height: 100vh;
+.swiper-slide:nth-child(3n + 1) {
+  /*1、4、7、3n+1枚目の背景色 */
+  background-color: #de4439;
+}
 
-  .swiper-slide {
-    height: 100%;
-    width: auto;
+.swiper-slide:nth-child(3n + 2) {
+  /*2、5、8、3n+2枚目の背景色 */
+  background-color: #fcd500;
+}
 
-    .slide-0,
-    .slide-1,
-    .slide-2,
-    .slide-3 {
-      position: relative;
-      height: 100%;
-    }
-  }
-
-  .swiper-pagination {
-    position: fixed;
-
-    &-bullet {
-      rotate: 90deg;
-    }
-  }
-
-  .swiper {
-    &-button {
-
-      &-prev,
-      &-next {
-        &::before {
-          position: relative;
-          font-family: FontAwesome;
-          background: rgba(255, 255, 255, 0.3);
-          padding: 8px 12px;
-
-          @include m.mq (sp) {
-            opacity: 1;
-          }
-        }
-      }
-
-      &-prev {
-        left: 50%;
-        top: 15%;
-        rotate: 90deg;
-
-        &::before {
-          content: "\f104";
-        }
-      }
-
-      &-next {
-        right: 48%;
-        top: 90%;
-        rotate: 90deg;
-
-        &::before {
-          content: "\f105";
-        }
-      }
-    }
-  }
+.swiper-slide:nth-child(3n + 3) {
+  /*3、6、9、3n+3枚目の背景色 */
+  background-color: #53c638;
 }

@@ -6,17 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>swiperSiteDemo</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;1,300;1,400&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="swiper/css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="swiper/swiper-bundle.min"></script>
-  <script src="js/slider.min.js"></script>
+  <script type="text/javascript" src="js/slider.min.js" defer></script>
 </head>
 
 <body>
@@ -37,83 +30,19 @@
     <span class="p-gmenu--fead"></span>
   </header>
   <main>
-    <div class="p-concept">
-      <article class="swiper-concept">
-        <!-- Additional required wrapper -->
-        <ul class="swiper-wrapper">
-          <!-- Slides -->
-          <li class="swiper-slide swiper-no-swiping">
-            <div class="slide-0">
-              <section class="slide-inner p-concept__inner inner--first">
-                <div class="core--first">
-                  <h2 class="p-concept__title--page">
-                    <p class="c-margin-center">
-
-                    </p>
-                  </h2>
-
-                </div>
-              </section>
-              <span class="p-concept__bg bg-0"></span>
-            </div>
-          </li>
-          <li class="swiper-slide swiper-no-swiping">
-            <div class="slide-1">
-              <section class="slide-inner p-concept__inner inner--second">
-                <div class="core--second">
-
-                  <h3 class="p-concept__title--flip first">
-                    <p class="c-margin-center">
-
-                    </p>
-                  </h3>
-
-                </div>
-              </section>
-              <span class="p-concept__bg bg-1"></span>
-            </div>
-          </li>
-          <li class="swiper-slide swiper-no-swiping">
-            <div class="slide-2">
-              <section class="slide-inner p-concept__inner inner--third">
-                <div class="core--third">
-                  <h3 class="p-concept__title--flip second">
-                    <p class="c-margin-center">
-
-                    </p>
-                  </h3>
-
-                </div>
-              </section>
-              <span class="p-concept__bg bg-2"></span>
-              <canvas id="waveCanvas"></canvas>
-              <span class="u-arrow-scroll">
-                <p class="u-arrow-scroll__inner">SWIPE</p>
-              </span>
-            </div>
-          </li>
-          <li class="swiper-slide third swiper-no-swiping">
-            <div class="slide-3">
-              <section class="slide-inner p-concept__inner inner--forth">
-                <div class="core--forth">
-                  <h3 class="p-concept__title--flip third">
-                    <p class="c-margin-center">
-
-
-                    </p>
-                  </h3>
-
-                </div>
-              </section>
-              <span class="p-concept__bg bg-3"></span>
-              <span class="p-concept__bg bg-3-before"></span>
-            </div>
-          </li>
-        </ul>
-
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      </article>
+    <div class="swiper">
+      <!-- 必要に応じたwrapper -->
+      <div class="swiper-wrapper">
+        <!-- スライド -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <!-- 必要に応じてページネーション -->
+      </div>
+      <div class="swiper-pagination"></div>
+      <!-- 必要に応じてナビボタン -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </main>
   <footer></footer>
