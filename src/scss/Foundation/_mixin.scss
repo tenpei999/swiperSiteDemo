@@ -1,12 +1,25 @@
-$breakpoint: (
-  sp: 'screen and (min-width: 600px)',
-  pc: 'screen and (min-width: 1025px)'
+/* mixin */
+$mq-breakpoints: (
+'screen01': 375px,
+//スマホ
+'screen012': 400px,
+//スマホ2
+'screen011': 767px,
+//スマホ
+'screen02': 820px,
+//タブレット
+'screen021': 1000px,
+//タブレット
+'screen03': 1200px,
+//pc
+'screen31': 1400px,
+//pc
+'screen04': 1920px,
+//pc
 );
 
-@mixin mq($bp) {
-  @media #{map-get($breakpoint, $bp)} {
-  @content;
+@mixin mq($breakpoint: screen01) {
+  @media screen and (min-width: #{map-get($mq-breakpoints, $breakpoint)}) {
+    @content;
   }
 }
-
-

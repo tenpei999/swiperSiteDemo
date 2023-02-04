@@ -16,7 +16,7 @@ h1 {
   display: unset;
 }
 
-/*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* mixin */ /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
 *,
@@ -464,12 +464,125 @@ th {
   display: none;
 }
 
+.p-gmenu {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .p-gmenu {
+    height: 100%;
+    margin: 0 10vw;
+    width: 20vw;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-bottom: 2rem;
+  }
+}
+.p-gmenu li {
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.p-gmenu li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.p-gmenu li:first-of-type a {
+  z-index: 1;
+}
+.p-gmenu li:first-of-type::before {
+  border-right: solid 2px;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 50%;
+  height: 25%;
+  top: 55%;
+}
+@media screen and (min-width: 1200px) {
+  .p-gmenu li:first-of-type::before {
+    display: none;
+  }
+}
+.p-gmenu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 1200px) {
+  .p-gmenu__list {
+    margin: unset;
+    padding: 1rem 1rem 0 0;
+    text-align: center;
+  }
+}
+.p-gmenu__list .title {
+  z-index: 1000;
+}
+.p-gmenu__list .item {
+  font-size: 1.3rem;
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+@media screen and (min-width: 1200px) {
+  .p-gmenu__list .item {
+    width: 10rem;
+    text-align: unset;
+  }
+}
+
 .p-header {
-  position: fixed;
+  width: 100%;
   height: 10vh;
-  width: 100vw;
-  background-color: white;
+  position: fixed;
   z-index: 10;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+}
+@media screen and (min-width: 1200px) {
+  .p-header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.p-header__logo {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+.p-header__logo img {
+  width: 100%;
 }
 
 /*Foundation*/
