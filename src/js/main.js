@@ -1,4 +1,6 @@
 const swiper = new Swiper(".swiper", {
+  direction: 'vertical',
+  mousewheel: true,
   // ページネーションが必要なら追加
   pagination: {
     el: ".swiper-pagination"
@@ -6,6 +8,6 @@ const swiper = new Swiper(".swiper", {
   // ナビボタンが必要なら追加
   navigation: {
     nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    prevEl: ".swiper-button-prev",
   }
 });
