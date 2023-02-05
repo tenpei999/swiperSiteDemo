@@ -465,7 +465,9 @@ th {
   display: none;
 }
 .swiper--video {
+  position: relative;
   width: 45vw;
+  aspect-ratio: 2/1.7;
   overflow: hidden;
 }
 .swiper--video .swiper--wrapper {
@@ -474,8 +476,12 @@ th {
 .swiper--video .swiper-slide {
   /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
   height: 100%;
-  background-color: unset;
   display: block;
+  padding-bottom: 3rem;
+}
+.swiper--video .swiper-slide:nth-child(3n+1), .swiper--video .swiper-slide:nth-child(3n+2), .swiper--video .swiper-slide:nth-child(3n+3) {
+  /*1、4、7、3n+1枚目の背景色 */
+  background-color: unset;
 }
 .swiper--video .swiper-slide video {
   height: 100%;
@@ -490,13 +496,12 @@ th {
           transform: translate3d(0, 0, 0);
   z-index: 10;
   right: 10px;
-  bottom: 40%;
   height: 20px;
   -webkit-transform: translate3d(0px, -50%, 0);
           transform: translate3d(0px, -50%, 0);
 }
 .swiper--video .swiper-button-prev2 {
-  left: 15vw;
+  left: 5%;
   top: 50%;
   rotate: 180deg;
   position: absolute;
@@ -526,7 +531,7 @@ th {
   line-height: 1;
 }
 .swiper--video .swiper-button-next2 {
-  right: 15vw;
+  right: 5%;
   rotate: 0deg;
   position: absolute;
   top: 50%;
