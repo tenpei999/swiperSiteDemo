@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper--main", {
   direction: 'vertical',
   mousewheel: true,
   // ページネーションが必要なら追加
@@ -12,9 +12,17 @@ const swiper = new Swiper(".swiper", {
   }
 });
 
-const swiperVideo = new Swiper(".swiper-video", {
+const swiperVideo = new Swiper(".swiper--video", {
   direction: 'horizontal',
   // ページネーションが必要なら追加
+  loop: 'true',
+  
+  effect: 'slide',
+  slidesPerView: 1, // 画像の表示枚数
+  spaceBetween: 0, // 画像間の余白（px）
+  autoplay: {
+    delay: 3000,
+  },
   pagination: {
     el: ".swiper-pagination2",
     clickable: 'true',

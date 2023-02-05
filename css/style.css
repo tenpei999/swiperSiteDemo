@@ -4,12 +4,7 @@ html {
 }
 
 body {
-  min-width: 500px;
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
-}
-
-main {
-  min-width: 500px;
 }
 
 h1 {
@@ -422,14 +417,14 @@ th {
   max-width: 100vw;
 }
 
-.swiper {
+.swiper--main {
   height: 100svh;
 }
-.swiper--wrapper {
+.swiper--main .swiper--wrapper {
   /* wrapperのサイズを調整 */
   width: 100%;
 }
-.swiper-slide {
+.swiper--main .swiper-slide {
   /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
   color: #ffffff;
   width: 100%;
@@ -443,38 +438,50 @@ th {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  line-height: 300px;
-  font-size: 2rem;
 }
-.swiper-slide:nth-child(3n+1) {
+.swiper--main .swiper-slide:nth-child(3n+1) {
   /*1、4、7、3n+1枚目の背景色 */
   background-color: #de4439;
 }
-.swiper-slide:nth-child(3n+2) {
+.swiper--main .swiper-slide:nth-child(3n+2) {
   /*2、5、8、3n+2枚目の背景色 */
   background-color: #fcd500;
 }
-.swiper-slide:nth-child(3n+3) {
+.swiper--main .swiper-slide:nth-child(3n+3) {
   /*3、6、9、3n+3枚目の背景色 */
   background-color: #53c638;
 }
-.swiper-button-prev {
+.swiper--main .swiper-button-prev {
   left: 48%;
   top: 15vh;
   rotate: 90deg;
 }
-.swiper-button-next {
+.swiper--main .swiper-button-next {
   left: 48%;
   top: 95vh;
   rotate: 90deg;
 }
-.swiper-button-disabled {
+.swiper--main .swiper-button-disabled {
   display: none;
 }
-.swiper-video {
-  height: 100%;
+.swiper--video {
+  width: 45vw;
+  overflow: hidden;
 }
-.swiper-video .swiper-pagination2 {
+.swiper--video .swiper--wrapper {
+  /* wrapperのサイズを調整 */
+}
+.swiper--video .swiper-slide {
+  /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+  height: 100%;
+  background-color: unset;
+  display: block;
+}
+.swiper--video .swiper-slide video {
+  height: 100%;
+  width: 100%;
+}
+.swiper--video .swiper-pagination2 {
   position: absolute;
   text-align: center;
   -webkit-transition: 0.3s opacity;
@@ -488,9 +495,9 @@ th {
   -webkit-transform: translate3d(0px, -50%, 0);
           transform: translate3d(0px, -50%, 0);
 }
-.swiper-video .swiper-button-prev2 {
-  top: 70vh;
+.swiper--video .swiper-button-prev2 {
   left: 15vw;
+  top: 50%;
   rotate: 180deg;
   position: absolute;
   width: calc(var(--swiper-navigation-size) / 44 * 27);
@@ -509,7 +516,7 @@ th {
           justify-content: center;
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
 }
-.swiper-video .swiper-button-prev2:after {
+.swiper--video .swiper-button-prev2:after {
   content: "next";
   font-family: swiper-icons;
   font-size: var(--swiper-navigation-size);
@@ -518,8 +525,7 @@ th {
   font-variant: initial;
   line-height: 1;
 }
-.swiper-video .swiper-button-next2 {
-  top: 30vh;
+.swiper--video .swiper-button-next2 {
   right: 15vw;
   rotate: 0deg;
   position: absolute;
@@ -540,7 +546,7 @@ th {
           justify-content: center;
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
 }
-.swiper-video .swiper-button-next2:after {
+.swiper--video .swiper-button-next2:after {
   content: "next";
   font-family: swiper-icons;
   font-size: var(--swiper-navigation-size);
@@ -549,7 +555,7 @@ th {
   font-variant: initial;
   line-height: 1;
 }
-.swiper-video .swiper-button-disabled {
+.swiper--video .swiper-button-disabled {
   display: block;
 }
 
@@ -638,7 +644,7 @@ th {
 }
 
 .p-header {
-  width: 100%;
+  width: 100vw;
   height: 10vh;
   position: fixed;
   z-index: 10;

@@ -1,129 +1,148 @@
 @use "../../Foundation/index" as *;
 
 .swiper {
-  height: 100svh;
+  &--main {
+    height: 100svh;
 
-  &--wrapper {
-    /* wrapperのサイズを調整 */
-    width: 100%;
-  }
+    .swiper {
+      &--wrapper {
+        /* wrapperのサイズを調整 */
+        width: 100%;
+      }
 
-  &-slide {
-    /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
-    color: #ffffff;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 300px;
-    font-size: 2rem;
-
-    &:nth-child(3n + 1) {
-      /*1、4、7、3n+1枚目の背景色 */
-      background-color: #de4439;
-    }
-
-    &:nth-child(3n + 2) {
-      /*2、5、8、3n+2枚目の背景色 */
-      background-color: #fcd500;
-    }
-
-    &:nth-child(3n + 3) {
-      /*3、6、9、3n+3枚目の背景色 */
-      background-color: #53c638;
-    }
-  }
-
-  &-button {
-    &-prev {
-      left: 48%;
-      top: 15vh;
-      rotate: 90deg;
-    }
-
-    &-next {
-      left: 48%;
-      top: 95vh;
-      rotate: 90deg;
-    }
-
-    &-disabled {
-      display: none;
-    }
-  }
-
-  &-video {
-    height: 100%;
-
-    .swiper-pagination2 {
-      position: absolute;
-      text-align: center;
-      transition: .3s opacity;
-      transform: translate3d(0, 0, 0);
-      z-index: 10;
-      right: 10px;
-      bottom: 40%;
-      height: 20px;
-      transform: translate3d(0px, -50%, 0);
-    }
-
-    .swiper-button {
-      &-prev2 {
-        top: 70vh;
-        left: 15vw;
-        rotate: 180deg;
-        position: absolute;
-        width: calc(var(--swiper-navigation-size)/ 44 * 27);
-        height: var(--swiper-navigation-size);
-        margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
-        z-index: 10;
-        cursor: pointer;
+      &-slide {
+        /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+        color: #ffffff;
+        width: 100%;
+        height: 100%;
         display: flex;
-        align-items: center;
         justify-content: center;
-        color: var(--swiper-navigation-color, var(--swiper-theme-color));
+        align-items: center;
 
-        &:after {
-          content: 'next';
-          font-family: swiper-icons;
-          font-size: var(--swiper-navigation-size);
-          text-transform: none !important;
-          letter-spacing: 0;
-          font-variant: initial;
-          line-height: 1;
+        &:nth-child(3n + 1) {
+          /*1、4、7、3n+1枚目の背景色 */
+          background-color: #de4439;
+        }
+
+        &:nth-child(3n + 2) {
+          /*2、5、8、3n+2枚目の背景色 */
+          background-color: #fcd500;
+        }
+
+        &:nth-child(3n + 3) {
+          /*3、6、9、3n+3枚目の背景色 */
+          background-color: #53c638;
         }
       }
 
-      &-next2 {
-        top: 30vh;
-        right: 15vw;
-        rotate: 0deg;
-        position: absolute;
-        top: 50%;
-        width: calc(var(--swiper-navigation-size)/ 44 * 27);
-        height: var(--swiper-navigation-size);
-        margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
-        z-index: 10;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--swiper-navigation-color, var(--swiper-theme-color));
+      &-button {
+        &-prev {
+          left: 48%;
+          top: 15vh;
+          rotate: 90deg;
+        }
 
-        &:after {
-          content: 'next';
-          font-family: swiper-icons;
-          font-size: var(--swiper-navigation-size);
-          text-transform: none !important;
-          letter-spacing: 0;
-          font-variant: initial;
-          line-height: 1;
+        &-next {
+          left: 48%;
+          top: 95vh;
+          rotate: 90deg;
+        }
+
+        &-disabled {
+          display: none;
         }
       }
+    }
+  }
 
-      &-disabled {
+  &--video {
+
+    width: 45vw;
+    overflow: hidden;
+    .swiper {
+      &--wrapper {
+        /* wrapperのサイズを調整 */
+      }
+
+      &-slide {
+        /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
+        height: 100%;
+        background-color: unset;
         display: block;
+        video {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      &-pagination2 {
+        position: absolute;
+        text-align: center;
+        transition: .3s opacity;
+        transform: translate3d(0, 0, 0);
+        z-index: 10;
+        right: 10px;
+        bottom: 40%;
+        height: 20px;
+        transform: translate3d(0px, -50%, 0);
+      }
+
+      &-button {
+        &-prev2 {
+          left: 15vw;
+          top: 50%;
+          rotate: 180deg;
+          position: absolute;
+          width: calc(var(--swiper-navigation-size)/ 44 * 27);
+          height: var(--swiper-navigation-size);
+          margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+          z-index: 10;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--swiper-navigation-color, var(--swiper-theme-color));
+
+          &:after {
+            content: 'next';
+            font-family: swiper-icons;
+            font-size: var(--swiper-navigation-size);
+            text-transform: none !important;
+            letter-spacing: 0;
+            font-variant: initial;
+            line-height: 1;
+          }
+        }
+
+        &-next2 {
+          right: 15vw;
+          rotate: 0deg;
+          position: absolute;
+          top: 50%;
+          width: calc(var(--swiper-navigation-size)/ 44 * 27);
+          height: var(--swiper-navigation-size);
+          margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+          z-index: 10;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--swiper-navigation-color, var(--swiper-theme-color));
+
+          &:after {
+            content: 'next';
+            font-family: swiper-icons;
+            font-size: var(--swiper-navigation-size);
+            text-transform: none !important;
+            letter-spacing: 0;
+            font-variant: initial;
+            line-height: 1;
+          }
+        }
+
+        &-disabled {
+          display: block;
+        }
       }
     }
   }

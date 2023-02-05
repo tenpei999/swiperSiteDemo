@@ -1,7 +1,7 @@
 @use "../../Foundation/index" as *;
 
 .p-header {
-  width: 100%;
+  width: 100vw;
   height: 10vh;
   position: fixed;
   z-index: 10;
