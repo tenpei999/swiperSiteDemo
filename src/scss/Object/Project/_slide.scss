@@ -4,22 +4,70 @@
   &__second {
     &--title {
       padding: 5vh 0;
+
       @include mq(screen02) {
         padding: 0 0 5vh 0;
       }
     }
+
     &--text {
       text-align: left;
       padding: 0 10vw;
+
       @include mq(screen02) {
         text-align: center;
       }
     }
   }
+
   &__third {
     &--title {
       width: min(100%, 800px);
       padding: 0 0 5vh 20px;
+    }
+  }
+
+  &__fourth {
+    &--title {
+      padding: 2vh 0;
+
+      @include mq(screen02) {
+        padding: 0 0 2vh 0;
+      }
+    }
+
+    &--text {
+      padding: 0 15vw;
+    }
+    &--flex {
+      display: flex;
+      padding: 0 20vw;
+      &-img {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          width: 50%;
+          position: relative;
+          &::before {
+            content:'!'; 
+            height:0px; 
+            width:0px;
+            display:block;
+            position:absolute;
+            top:-10px; left:-10px; 
+            border:transparent solid; border-bottom-color:#333; border-width:0px 10vw 17.32vw 10vw; color:#fff; 
+            font-family:Verdana; font-weight:bold; 
+            font-size: clamp(20px, 13vw, 200px); 
+            line-height: clamp(25px, 20vw, 200%);
+            text-indent: -2.5vw;
+          }
+        }
+      }
+      &-text {
+        width: 50%;
+      }
     }
   }
 }
