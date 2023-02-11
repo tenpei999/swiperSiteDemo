@@ -1,5 +1,7 @@
 .c-title {
-  font-family: sans-serif;
-  font-size: clamp(1.5rem, 10vw, 2rem);
-  font-weight: bold;
+  &__slide {
+    font-family: sans-serif;
+    font-size: clamp(1.5rem, 10vw, 2rem);
+    font-weight: bold;
+  }
 }

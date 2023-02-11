@@ -2,10 +2,6 @@
 
 .p-slide {
   &__second {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     &--title {
       padding: 5vh 0;
       @include mq(screen02) {
@@ -18,6 +14,12 @@
       @include mq(screen02) {
         text-align: center;
       }
+    }
+  }
+  &__third {
+    &--title {
+      width: min(100%, 800px);
+      padding: 0 0 5vh 20px;
     }
   }
 }

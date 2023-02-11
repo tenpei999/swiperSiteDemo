@@ -14,9 +14,6 @@
         /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
         width: 100%;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
         &:nth-child(3n + 1) {
           /*1、4、7、3n+1枚目の背景色 */

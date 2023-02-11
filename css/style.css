@@ -417,6 +417,33 @@ th {
   max-width: 100vw;
 }
 
+.c-flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-position__child {
+  position: relative;
+}
+.c-position__child::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .swiper--main {
   height: 100svh;
 }
@@ -428,15 +455,6 @@ th {
   /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .swiper--main .swiper-slide:nth-child(3n+1) {
   /*1、4、7、3n+1枚目の背景色 */
@@ -570,11 +588,56 @@ th {
   display: block;
 }
 
+.c-tb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: #cccccc solid 1px;
+  font-family: sans-serif;
+}
+.c-tb:nth-of-type(2) {
+  margin: 5vh 0;
+}
+.c-tb__left h3 {
+  padding: 5vh 2vw;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+}
+.c-tb__left::after {
+  height: 70%;
+  border-right: #cccccc solid 1px;
+}
+.c-tb__right-inner {
+  padding: 16px;
+  font-size: clamp(0.8rem, 1.8vw, 1rem);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.c-tb__right-jump {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: block;
+}
+.c-tb__right-jump p {
+  display: inline-block;
+  padding: 1rem;
+  border: #e13131 1px solid;
+}
+
 .c-text {
   font-size: clamp(0.8rem, 5vw, 1rem);
 }
 
-.c-title {
+.c-title__slide {
   font-family: sans-serif;
   font-size: clamp(1.5rem, 10vw, 2rem);
   font-weight: bold;
@@ -701,21 +764,6 @@ th {
   width: 100%;
 }
 
-.p-slide__second {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 .p-slide__second--title {
   padding: 5vh 0;
 }
@@ -732,6 +780,10 @@ th {
   .p-slide__second--text {
     text-align: center;
   }
+}
+.p-slide__third--title {
+  width: min(100%, 800px);
+  padding: 0 0 5vh 20px;
 }
 
 /*Foundation*/
