@@ -426,7 +426,6 @@ th {
 }
 .swiper--main .swiper-slide {
   /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
-  color: #ffffff;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -571,6 +570,15 @@ th {
   display: block;
 }
 
+.c-text {
+  font-size: 0.9rem;
+}
+
+.c-title {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+}
+
 .p-gmenu {
   width: 100%;
   height: 50%;
@@ -690,6 +698,39 @@ th {
 }
 .p-header__logo img {
   width: 100%;
+}
+
+.p-slide__second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.p-slide__second--title {
+  padding: 5vh 0;
+}
+@media screen and (min-width: 820px) {
+  .p-slide__second--title {
+    padding: 0 0 5vh 0;
+  }
+}
+.p-slide__second--text {
+  text-align: left;
+  padding: 0 10vw;
+}
+@media screen and (min-width: 820px) {
+  .p-slide__second--text {
+    text-align: center;
+  }
 }
 
 /*Foundation*/

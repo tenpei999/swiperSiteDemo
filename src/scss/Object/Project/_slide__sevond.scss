@@ -1,0 +1,23 @@
+@use "../../Foundation/index" as *;
+
+.p-slide {
+  &__second {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    &--title {
+      padding: 5vh 0;
+      @include mq(screen02) {
+        padding: 0 0 5vh 0;
+      }
+    }
+    &--text {
+      text-align: left;
+      padding: 0 10vw;
+      @include mq(screen02) {
+        text-align: center;
+      }
+    }
+  }
+}
