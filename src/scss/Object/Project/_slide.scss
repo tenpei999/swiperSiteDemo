@@ -39,47 +39,124 @@
     &--text {
       padding: 0 15vw;
     }
+
     &--flex {
       display: flex;
       padding: 10vh 15vw;
+
       &-img {
         width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         padding-top: 20px;
+
         @include mq (screen012) {
           align-items: unset;
         }
+
         span {
           width: 50%;
           position: relative;
+
           &::before {
-            content:'!'; 
-            height:0px; 
-            width:0px;
-            display:block;
-            position:absolute;
-            top:-10px; left:-10px; 
-            border:transparent solid; border-bottom-color:#333; border-width:0px 7.5vw 13vw 7.5vw; color:#fff; 
-            font-family:Verdana; font-weight:bold; 
-            font-size: clamp(15px, 10vw, 150px); 
+            content: '!';
+            height: 0px;
+            width: 0px;
+            display: block;
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            border: transparent solid;
+            border-bottom-color: #333;
+            border-width: 0px 7.5vw 13vw 7.5vw;
+            color: #fff;
+            font-family: Verdana;
+            font-weight: bold;
+            font-size: clamp(15px, 10vw, 150px);
             line-height: clamp(19px, 15vw, 150%);
             text-indent: -1.875vw;
+
             @include mq(screen03) {
               margin-left: -5vw;
             }
           }
         }
       }
+
       &-text {
         width: 50%;
         margin-right: 5vw;
         padding-left: 5vw;
+
         li:nth-last-of-type(2) {
           padding: 16px 0;
         }
       }
     }
+  }
+
+  &__fifth {
+    &--title {
+      padding: 2vh 0;
+
+      @include mq(screen02) {
+        padding: 0 0 2vh 0;
+      }
+    }
+
+    &--text {
+      padding: 0 15vw;
+    }
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 20vh;
+      padding-left: 20vw;
+
+      @include mq (screen012) {
+        align-items: unset;
+      }
+
+      span {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        &::before {
+          content: '!';
+          height: 0px;
+          width: 0px;
+          display: block;
+          position: absolute;
+          top: -10px;
+          left: -10px;
+          border: transparent solid;
+          border-bottom-color: #333;
+          border-width: 0px 30vw 51.96vw 30vw;
+          color: #fff;
+          font-family: Verdana;
+          font-weight: bold;
+          font-size: clamp(100px, 40vw, 60vh);
+          line-height: 150%;
+          text-indent: max(-110px, -7.5vw);
+        }
+      }
+    }
+
+    &-text {
+      width: 50%;
+      margin-right: 5vw;
+      padding-left: 5vw;
+
+      li:nth-last-of-type(2) {
+        padding: 16px 0;
+      }
+    }
+
   }
 }
