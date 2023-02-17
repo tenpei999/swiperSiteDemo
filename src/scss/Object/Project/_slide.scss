@@ -82,4 +82,72 @@
       }
     }
   }
+  &__fifth {
+    &--title {
+      margin-top: 5vh;
+      @include mq (screen02) {
+        margin-top: 15vh;
+      }
+    }
+    &--contents {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5vh;
+      &-upper,
+      &-lower {
+        display: flex;
+        flex-direction: column;
+        @include mq (screen02) {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+  &__sixth {
+    justify-content: flex-end;
+    &--title {
+      height: 10vh;
+    }
+    &--table {
+      padding-top: 3vh;
+      table {
+        height: 65vh;
+        width: 100vw;
+        @include mq (screen012) {
+          width: 50vw;
+          min-width: 400px;
+        }
+        tbody {
+          tr {
+            border-bottom: solid;
+            .title {
+              vertical-align: middle;
+              text-align: center;
+              width: 20vw;
+              @include mq (screen012) {
+                width: 20%;
+              }
+            }
+            .child {
+              vertical-align: middle;
+              overflow-wrap: normal;
+              border-left: solid;
+              padding: 0 8px;
+              width: 80vw;
+              overflow-wrap: normal;
+              @include mq (screen012) {
+                width: 80%;
+              }
+            }
+          }
+        }
+      }
+    }
+    &--button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 10vh;
+    }
+  }
 }

@@ -700,6 +700,65 @@ th {
   font-weight: bold;
 }
 
+.card {
+  margin: 0 15vw;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 3vh 0;
+  overflow: hidden;
+}
+@media screen and (min-width: 820px) {
+  .card {
+    margin: unset;
+    width: 30vw;
+    height: 35vh;
+  }
+  .card:nth-of-type(odd) {
+    margin-right: 5vw;
+  }
+}
+.card__imgframe {
+  width: 100%;
+  height: 100%;
+  padding-top: 56.25%;
+  background: url(https://placehold.jp/640x360.png) no-repeat center;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.card__textbox {
+  width: 100%;
+  height: 100%;
+  padding: 0 18px;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.card__textbox > * + * {
+  margin-top: 10px;
+}
+.card__titletext {
+  font-size: clamp(16px, 5vw, 20px);
+  font-weight: bold;
+  line-height: 125%;
+}
+.card__overviewtext {
+  font-size: 12px;
+  line-height: 150%;
+  display: none;
+}
+@media screen and (min-width: 820px) {
+  .card__overviewtext {
+    display: block;
+  }
+}
+
 .p-gmenu {
   width: 100%;
   height: 50%;
@@ -749,7 +808,7 @@ th {
   display: block;
   width: 50%;
   height: 25%;
-  top: 55%;
+  bottom: 0;
 }
 @media screen and (min-width: 1200px) {
   .p-gmenu li:first-of-type::before {
@@ -913,6 +972,100 @@ th {
 }
 .p-slide__fourth--flex-text li:nth-last-of-type(2) {
   padding: 16px 0;
+}
+.p-slide__fifth--title {
+  margin-top: 5vh;
+}
+@media screen and (min-width: 820px) {
+  .p-slide__fifth--title {
+    margin-top: 15vh;
+  }
+}
+.p-slide__fifth--contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5vh;
+}
+.p-slide__fifth--contents-upper, .p-slide__fifth--contents-lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 820px) {
+  .p-slide__fifth--contents-upper, .p-slide__fifth--contents-lower {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.p-slide__sixth {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.p-slide__sixth--title {
+  height: 10vh;
+}
+.p-slide__sixth--table {
+  padding-top: 3vh;
+}
+.p-slide__sixth--table table {
+  height: 65vh;
+  width: 100vw;
+}
+@media screen and (min-width: 400px) {
+  .p-slide__sixth--table table {
+    width: 50vw;
+    min-width: 400px;
+  }
+}
+.p-slide__sixth--table table tbody tr {
+  border-bottom: solid;
+}
+.p-slide__sixth--table table tbody tr .title {
+  vertical-align: middle;
+  text-align: center;
+  width: 20vw;
+}
+@media screen and (min-width: 400px) {
+  .p-slide__sixth--table table tbody tr .title {
+    width: 20%;
+  }
+}
+.p-slide__sixth--table table tbody tr .child {
+  vertical-align: middle;
+  overflow-wrap: normal;
+  border-left: solid;
+  padding: 0 8px;
+  width: 80vw;
+  overflow-wrap: normal;
+}
+@media screen and (min-width: 400px) {
+  .p-slide__sixth--table table tbody tr .child {
+    width: 80%;
+  }
+}
+.p-slide__sixth--button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10vh;
 }
 
 /*Foundation*/
