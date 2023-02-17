@@ -11,6 +11,19 @@ const swiper = new Swiper(".swiper--main", {
   on: {
     init: function () {
       this.slideTo(this.hashNavigation);
+      if (this.activeIndex == 0) {
+        console.log('hoge');
+      } else {
+        console.log('huge');
+      }
+    },
+    slideChange: function () {
+      //スライドが変わった時の処理
+      if (this.activeIndex != 0) {
+        console.log('huge');
+      } else {
+        console.log('hoge');        
+      }
     }
   },
 
@@ -20,7 +33,6 @@ const swiper = new Swiper(".swiper--main", {
     clickable: true, //この行を追記する
   },
 
-  
 });
 
 const swiperVideo = new Swiper(".swiper--video", {
@@ -49,7 +61,7 @@ console.log(swiperVideo);
 //swiperでボタンを押したらtopに戻るjavascriptの記述
 
 // イベント関数
-function goTop(){
+function goTop() {
   // Swiperオブジェクトを取得
   const mySwiper = document.querySelector('.swiper--main').swiper;
   // Swiperのスクロールを最上部に移動
@@ -60,4 +72,3 @@ function goTop(){
 const btn = document.querySelector('.u-button-totop');
 // イベントリスナーを設定
 btn.addEventListener('click', goTop);
-
