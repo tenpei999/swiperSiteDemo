@@ -12,17 +12,17 @@ const swiper = new Swiper(".swiper--main", {
     init: function () {
       this.slideTo(this.hashNavigation);
       if (this.activeIndex == 0) {
-        console.log('hoge');
+        document.querySelector('.u-button-totop').classList.add('is-top')
       } else {
-        console.log('huge');
+        document.querySelector('.u-button-totop').classList.remove('is-top')
       }
     },
     slideChange: function () {
       //スライドが変わった時の処理
       if (this.activeIndex != 0) {
-        console.log('huge');
+        document.querySelector('.u-button-totop').classList.remove('is-top')
       } else {
-        console.log('hoge');        
+        document.querySelector('.u-button-totop').classList.add('is-top')     
       }
     }
   },
