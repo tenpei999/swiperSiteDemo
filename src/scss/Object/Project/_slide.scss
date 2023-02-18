@@ -106,10 +106,10 @@
   &__sixth {
     justify-content: flex-end;
     &--title {
-      height: 10vh;
+      height: 8vh;
     }
     &--table {
-      padding-top: 3vh;
+      padding-top: -3vh;
       table {
         height: 65vh;
         width: 100vw;
@@ -147,7 +147,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 10vh;
+      height: 15vh;
+      padding-bottom: 1rem;
     }
   }
 }
