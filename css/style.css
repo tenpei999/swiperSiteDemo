@@ -651,9 +651,21 @@ th {
   display: flex;
   border: #cccccc solid 1px;
   font-family: sans-serif;
+  opacity: 1;
+  -webkit-transition: margin-left 1s, margin-right 1s, background-color 0.3s ease-in;
+  transition: margin-left 1s, margin-right 1s, background-color 0.3s ease-in;
 }
 .c-tb:nth-of-type(2) {
   margin: 5vh 0;
+}
+.c-tb:hover {
+  background-color: aquamarine;
+}
+.c-tb:hover h3,
+.c-tb:hover li {
+  color: blue;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 .c-tb__left h3 {
   padding: 5vh 2vw;
@@ -686,8 +698,28 @@ th {
 }
 .c-tb__right-jump p {
   display: inline-block;
-  padding: 1rem;
+  margin-top: 1vh;
+  padding: 0.6rem 1rem;
   border: #e13131 1px solid;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.c-tb__right-jump p:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #6bb6ff;
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  margin-top: calc(1vh - 5px);
+}
+.c-tb.js-fadeIn {
+  opacity: 0;
+  margin-left: 20vw;
+}
+.c-tb.js-fadeIn:nth-of-type(2) {
+  margin-left: -20vw;
 }
 
 .c-text {

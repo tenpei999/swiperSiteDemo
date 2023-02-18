@@ -23,3 +23,25 @@ $mq-breakpoints: (
     @content;
   }
 }
+
+@mixin animation(
+   //初期値
+  $name,
+  $duration: 1s,
+  $timing-function: ease,
+  $delay: 0s,
+  $iteration-count: 1,
+  $direction: normal,
+  $fill-mode: forwards
+) {
+   //プロパティのネスト記法
+  animation: {
+    name: $name; //アニメーションの名前
+    duration: $duration; //アニメーション時間
+    timing-function: $timing-function; //アニメーションの実行速度
+    delay: $delay; //アニメーションの開始するまでの時間
+    iteration-count: $iteration-count; //アニメーションを繰り返させる回数
+    direction: $direction; //アニメーションを繰り返す際の最初の状態
+    fill-mode: $fill-mode; //アニメーションが終了した後の状態
+  }
+}

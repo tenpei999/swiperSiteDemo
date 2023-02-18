@@ -22,8 +22,14 @@ const swiper = new Swiper(".swiper--main", {
       if (this.activeIndex != 0) {
         document.querySelector('.u-button-totop').classList.remove('is-top')
       } else {
-        document.querySelector('.u-button-totop').classList.add('is-top')     
-      }
+        document.querySelector('.u-button-totop').classList.add('is-top')
+      };
+
+      if (this.activeIndex !== 2) {
+        document.querySelectorAll('.c-tb').forEach(item => item.classList.add('js-fadeIn'));
+      } else {
+        document.querySelectorAll('.c-tb.js-fadeIn').forEach(item => item.classList.remove('js-fadeIn'));
+      };
     }
   },
 
