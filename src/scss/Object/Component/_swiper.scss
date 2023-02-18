@@ -42,6 +42,24 @@
     }
   }
 
+  &-pagination {
+    font-size: 0 !important;
+
+    @include mql (screen02) {
+      background-color: unset;
+      --swiper-theme-color: none;
+
+      &-bullet {
+        background-color: unset;
+        font-size: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        border: solid 1px;
+        border-radius: 50% 50%;
+      }
+    }
+  }
+
   &--video {
 
     position: relative;
@@ -56,13 +74,6 @@
         height: 100%;
         display: block;
         padding-bottom: 3rem;
-
-        &:nth-child(3n + 1),
-        &:nth-child(3n + 2),
-        &:nth-child(3n + 3) {
-          /*1、4、7、3n+1枚目の背景色 */
-          background-color: unset;
-        }
 
         video {
           height: 100%;

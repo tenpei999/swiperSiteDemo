@@ -11,7 +11,9 @@ h1 {
   display: unset;
 }
 
-/* mixin */ /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* mixin */
+/* mixin */
+/*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
 *,
@@ -526,6 +528,23 @@ th {
 .swiper--main .swiper-button-disabled {
   display: none;
 }
+.swiper-pagination {
+  font-size: 0 !important;
+}
+@media screen and (max-width: 800px) {
+  .swiper-pagination {
+    background-color: unset;
+    --swiper-theme-color: none;
+  }
+  .swiper-pagination-bullet {
+    background-color: unset;
+    font-size: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: solid 1px;
+    border-radius: 50% 50%;
+  }
+}
 .swiper--video {
   position: relative;
   width: 45vw;
@@ -537,10 +556,6 @@ th {
   height: 100%;
   display: block;
   padding-bottom: 3rem;
-}
-.swiper--video .swiper-slide:nth-child(3n+1), .swiper--video .swiper-slide:nth-child(3n+2), .swiper--video .swiper-slide:nth-child(3n+3) {
-  /*1、4、7、3n+1枚目の背景色 */
-  background-color: unset;
 }
 .swiper--video .swiper-slide video {
   height: 100%;
@@ -733,7 +748,7 @@ th {
   padding: 3vh 0;
   overflow: hidden;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 800px) {
   .card {
     margin: unset;
     width: 30vw;
@@ -773,7 +788,7 @@ th {
   line-height: 150%;
   display: none;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 800px) {
   .card__overviewtext {
     display: block;
   }
@@ -812,7 +827,7 @@ th {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: ) {
   .p-gmenu {
     height: 100%;
     margin: 0 10vw;
@@ -853,7 +868,7 @@ th {
   height: 25%;
   bottom: 0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: ) {
   .p-gmenu li:first-of-type::before {
     display: none;
   }
@@ -863,7 +878,7 @@ th {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: ) {
   .p-gmenu__list {
     margin: unset;
     padding: 1rem 1rem 0 0;
@@ -879,7 +894,7 @@ th {
   text-align: center;
   position: relative;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: ) {
   .p-gmenu__list .item {
     width: 10rem;
     text-align: unset;
@@ -903,7 +918,7 @@ th {
   display: flex;
   background: #fff;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: ) {
   .p-header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -926,7 +941,7 @@ th {
 .p-slide__second--title {
   padding: 5vh 0;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 800px) {
   .p-slide__second--title {
     padding: 0 0 5vh 0;
   }
@@ -935,7 +950,7 @@ th {
   text-align: left;
   padding: 0 10vw;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 800px) {
   .p-slide__second--text {
     text-align: center;
   }
@@ -947,7 +962,7 @@ th {
 .p-slide__fourth--title {
   padding: 2vh 0;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 800px) {
   .p-slide__fourth--title {
     padding: 0 0 2vh 0;
   }
@@ -1003,7 +1018,7 @@ th {
   line-height: clamp(19px, 15vw, 150%);
   text-indent: -1.875vw;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: ) {
   .p-slide__fourth--flex-img span::before {
     margin-left: -5vw;
   }
@@ -1019,7 +1034,7 @@ th {
 .p-slide__fifth--title {
   margin-top: 5vh;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 800px) {
   .p-slide__fifth--title {
     margin-top: 15vh;
   }
@@ -1043,7 +1058,7 @@ th {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 800px) {
   .p-slide__fifth--contents-upper, .p-slide__fifth--contents-lower {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

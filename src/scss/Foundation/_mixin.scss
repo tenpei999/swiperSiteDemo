@@ -13,3 +13,14 @@ $mq-breakpoints: (
     @content;
   }
 }
+/* mixin */
+$mq-breakpoints: (
+'screen012': 400px,
+'screen02': 800px,
+);
+
+@mixin mql($breakpoint: screen01) {
+  @media screen and (max-width: #{map-get($mq-breakpoints, $breakpoint)}) {
+    @content;
+  }
+}
