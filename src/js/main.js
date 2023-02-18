@@ -3,6 +3,7 @@ const swiper = new Swiper(".swiper--main", {
   mousewheel: true,
   touchRatio: 3,
   shortSwipes: false,
+  resistance: false,
 
   hashNavigation: {
     watchState: true

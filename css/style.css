@@ -1115,6 +1115,20 @@ th {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
+.u-button-totop:hover::after {
+  left: 7vh;
+  top: 1.5vh;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.u-button-totop:hover p {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
 .u-button-totop.is-top {
   opacity: 0;
   -webkit-transition: all 0.3s ease-in;
@@ -1143,6 +1157,8 @@ th {
   height: 70%;
   border: min(40px, 20vw) solid transparent;
   border-left: min(40px, 20vw) solid red;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .u-button-totop p {
   height: 100%;
@@ -1153,6 +1169,8 @@ th {
   color: red;
   font-weight: bold;
   font-family: sans-serif;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 /*Foundation*/
