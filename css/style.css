@@ -513,15 +513,6 @@ th {
 .swiper--main .swiper-slide.slide1.c-flex-center.swiper-slide-active .u-button-totop {
   display: none;
 }
-.swiper--main .swiper-slide:nth-child(3n+1) {
-  /*1、4、7、3n+1枚目の背景色 */
-}
-.swiper--main .swiper-slide:nth-child(3n+2) {
-  /*2、5、8、3n+2枚目の背景色 */
-}
-.swiper--main .swiper-slide:nth-child(3n+3) {
-  /*3、6、9、3n+3枚目の背景色 */
-}
 .swiper--main .swiper-button-prev {
   left: 48%;
   top: 15vh;
@@ -540,9 +531,6 @@ th {
   width: 45vw;
   aspect-ratio: 2/1.7;
   overflow: hidden;
-}
-.swiper--video .swiper--wrapper {
-  /* wrapperのサイズを調整 */
 }
 .swiper--video .swiper-slide {
   /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
@@ -1125,7 +1113,7 @@ th {
 }
 
 .u-button-totop {
-  display: block;
+  display: none;
   right: 5%;
   bottom: 5%;
   rotate: 270deg;

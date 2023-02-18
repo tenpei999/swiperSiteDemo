@@ -20,21 +20,6 @@
             display: none;
           }
         }
-
-        &:nth-child(3n + 1) {
-          /*1、4、7、3n+1枚目の背景色 */
-
-        }
-
-        &:nth-child(3n + 2) {
-          /*2、5、8、3n+2枚目の背景色 */
-
-        }
-
-        &:nth-child(3n + 3) {
-          /*3、6、9、3n+3枚目の背景色 */
-
-        }
       }
 
       &-button {
@@ -65,9 +50,6 @@
     overflow: hidden;
 
     .swiper {
-      &--wrapper {
-        /* wrapperのサイズを調整 */
-      }
 
       &-slide {
         /* スライドのサイズを調整、中身のテキスト配置調整、背景色 */
