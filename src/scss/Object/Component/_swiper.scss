@@ -47,6 +47,10 @@
 
     @include mql (screen02) {
       background-color: unset;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
       --swiper-theme-color: none;
 
       &-bullet {
@@ -56,6 +60,10 @@
         height: 2.5rem;
         border: solid 1px;
         border-radius: 50% 50%;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 25%;
+        background-color: #fff;
       }
     }
   }
@@ -90,6 +98,21 @@
         right: 10px;
         height: 20px;
         transform: translate3d(0px, -50%, 0);
+
+        &-bullet {
+          width: 10px;
+          height: 10px;
+          background-color: #000000;
+          border-radius: 100%;
+          opacity: 0.2;
+          display: inline-block;
+          margin: 0 5vw;
+
+          &.swiper-pagination-bullet-active {
+            opacity: var(--swiper-pagination-bullet-opacity, 1);
+            background: var(--swiper-pagination-color, var(--swiper-theme-color));
+          }
+        }
       }
 
       &-button {

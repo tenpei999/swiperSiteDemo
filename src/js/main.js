@@ -41,18 +41,16 @@ const swiper = new Swiper(".swiper--main", {
     el: ".swiper-pagination",
     clickable: true,
     renderBullet: function (index, className) {
-      var ret = '<span class="' + className + '">' + (index + 1) + "</span>";
-      if (index > 0) {
-        ret = '<span class="' + className + '-separator"></span>' + ret;
-      }
-      return ret;
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
     }
   },
+
   breakpoints: {
     400: {
       pagination: {
         el: '.swiper-pagination',
-        type: 'bullets', // ページネーションの表示を変える
+        type: 'bullets',
+        clickable: true,
       },
     },
   },
@@ -73,6 +71,7 @@ const swiperVideo = new Swiper(".swiper--video", {
   pagination: {
     el: ".swiper-pagination2",
     clickable: 'true',
+    bulletClass: 'swiper-pagination2-bullet'
   },
   // ナビボタンが必要なら追加
   navigation: {
@@ -96,16 +95,3 @@ function goTop() {
 const btn = document.querySelector('.u-button-totop');
 // イベントリスナーを設定
 btn.addEventListener('click', goTop);
-
-// renderBullet: function (index, className) {
-//   //window幅を毎回取得
-//   const windowWidth = window.innerWidth;
-//   //window幅400px未満の場合にのみ有効にする処理
-//   if (windowWidth < 400) {
-//     //中に数字を表示
-//     return '<span class="' + className + '">' + (index + 1) + '</span>';
-//   } else {
-//     //中に点を表示
-//     return '<span class="' + className + '"></span>';
-//   }
-// }

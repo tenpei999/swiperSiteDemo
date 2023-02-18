@@ -534,6 +534,16 @@ th {
 @media screen and (max-width: 800px) {
   .swiper-pagination {
     background-color: unset;
+    height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     --swiper-theme-color: none;
   }
   .swiper-pagination-bullet {
@@ -543,6 +553,10 @@ th {
     height: 2.5rem;
     border: solid 1px;
     border-radius: 50% 50%;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 25%;
+    background-color: #fff;
   }
 }
 .swiper--video {
@@ -573,6 +587,19 @@ th {
   height: 20px;
   -webkit-transform: translate3d(0px, -50%, 0);
           transform: translate3d(0px, -50%, 0);
+}
+.swiper--video .swiper-pagination2-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  border-radius: 100%;
+  opacity: 0.2;
+  display: inline-block;
+  margin: 0 5vw;
+}
+.swiper--video .swiper-pagination2-bullet.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
 }
 .swiper--video .swiper-button-prev2 {
   left: 5%;
