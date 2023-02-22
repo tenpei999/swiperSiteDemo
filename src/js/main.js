@@ -10,14 +10,6 @@ const swiper = new Swiper(".swiper--main", {
   },
 
   on: {
-    init: function () {
-      this.slideTo(this.hashNavigation);
-      if (this.activeIndex == 0) {
-        document.querySelector('.u-button-totop').classList.add('is-top')
-      } else {
-        document.querySelector('.u-button-totop').classList.remove('is-top')
-      }
-    },
     slideChange: function () {
       //スライドが変わった時の処理
       if (this.activeIndex != 0) {
